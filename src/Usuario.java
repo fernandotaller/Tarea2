@@ -65,4 +65,15 @@ public class Usuario {
         this.saldo = 0;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+
+        if (!(obj instanceof Usuario)) return false;
+
+        Usuario usu = (Usuario) obj;
+
+        return this.cedula.equals(usu.getCedula());
+    }
+
 }
