@@ -23,4 +23,8 @@ public class FuncionesUsuario {
         return impuesto * (1 - (descuentoImp / 100));
     }
 
+    public void cobroSueldo(Usuario usuario, double sueldo) {
+        usuario.setSaldo(usuario.getSaldo() + sueldo);
+    }
+
 }
